@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>PROJECT WITH MENTOR</title>
+  </head>
+  <body>
+    <!--! Navbar start -->
+    <div class="container1">
+      <div class="block1">
+        <div class="header1">
+          <div class="header_logo1">
+            <img src="./images/logoTMB.png" alt="logo" />
+            <h2>Timberland</h2>
+          </div>
+          <div class="header_center1">
+            <ul>
+              <a href="./product.html"> <li>Главная</li> </a>
+              <a href="./index.html"> <li>Продукты</li> </a>
+              <a href="./aboutass.html"> <li>О нас</li> </a>
+              <a href="./ourpartners.html">
+                <li>Наши Партнеры</li>
+              </a>
+            </ul>
+          </div>
+          <div class="search-box1">
+            <input
+              type="text"
+              class="search-txt"
+              placeholder="введите категорию"
+            />
+            <a href="" class="search-btn">
+              <img
+                src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon.png"
+                alt=""
+                width="20px"
+              />
+            </a>
+          </div>
+          <div id="open-admin"></div>
+        </div>
+      </div>
+    </div>
+    <!--? ====== navbar end ======== -->
+
+    <!-- ! CRAETE START -->
+    <div class="section__add">
+      <div class="accordion__header">Добавить товар</div>
+      <div id="accordion__body">
+        <input
+          type="text"
+          class="section__add_details"
+          placeholder="Описания"
+        />
+        <input type="number" class="section__add_price" placeholder="Цены" />
+        <input
+          type="text"
+          class="section__add_quantity"
+          placeholder="Наименование"
+        />
+        <input
+          type="text"
+          class="section_add_category"
+          placeholder="Категория"
+        />
+        <input type="number" class="section__add_sales" placeholder="Скидки" />
+        <input
+          type="url"
+          class="section__add_url"
+          placeholder="URL изображение"
+        />
+        <button class="section__add_btn-add">Add</button>
+      </div>
+    </div>
+    <!-- ? ===== CRAETE END ====== -->
+
+    <!-- ! ====== READ START ======= -->
+
+    <section id="section__read"></section>
+
+    <!-- ? ====== READ END ======= -->
+
+    <!-- content start -->
+    <div
+      id="products-list"
+      class="d-flex flex-wrap justify-content-center"
+    ></div>
+    <!-- content end -->
+
+    <script
+      src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
