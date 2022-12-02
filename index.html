@@ -32,11 +32,7 @@
             </ul>
           </div>
           <div class="search-box1">
-            <input
-              type="text"
-              class="search-txt"
-              placeholder="введите категорию"
-            />
+            <input type="text" class="search-txt" placeholder="Поиск ..." />
             <a href="" class="search-btn">
               <img
                 src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon.png"
@@ -82,11 +78,70 @@
     </div>
     <!-- ? ===== CRAETE END ====== -->
 
+    <!-- ! FILTER START -->
+    <form>
+      <input type="radio" value="Cappucino" name="coffe" />
+      <label for="latte">Каппучино</label>
+      <br />
+      <input type="radio" value="Americano" name="coffe" />
+      <label for="latte">Американо</label>
+      <br />
+      <input type="radio" value="Espresso" name="coffe" />
+      <label for="latte">Експресоо</label>
+      <br />
+      <input type="radio" value="Affogato" name="coffe" />
+      <label for="latte">Аффогато</label>
+      <br />
+    </form>
+    <!-- ? FILTER END -->
+
     <!-- ! ====== READ START ======= -->
 
     <section id="section__read"></section>
 
-    <!-- ? ====== READ END ======= -->
+    <!-- ? ======= READ END ======= -->
+
+    <!-- ! PAGINATION START  -->
+
+    <div class="paginate">
+      <button id="prev-btn">Prev</button>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <!-- ? PAGINATION END  -->
+
+    <!-- ! EDIT START-->
+
+    <div class="main-modal">
+      <div class="main-modal__window">
+        <button class="window__edit_close">X</button>
+        <input
+          type="text"
+          class="window__edit_details"
+          placeholder="Описания"
+        />
+        <input type="number" class="window__edit_price" placeholder="Цены" />
+        <input
+          type="text"
+          class="window__edit_quantity"
+          placeholder="Наименование"
+        />
+        <input
+          type="text"
+          class="window__edit_category"
+          placeholder="Категория"
+        />
+        <input type="number" class="window__edit_sales" placeholder="Скидки" />
+        <input
+          type="url"
+          class="window__edit_url"
+          placeholder="URL изображение"
+        />
+        <button class="window__edit_btn-save">Edit</button>
+      </div>
+    </div>
+
+    <!-- ? EDIT END-->
 
     <!-- content start -->
     <div
